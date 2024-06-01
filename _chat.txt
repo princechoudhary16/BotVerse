@@ -1,0 +1,36 @@
+# [08/04/24, 2:34:13AM] Prince Choudhary: Hi
+# [08/04/24, 2:34:28AM] +918826727515: Hi
+# [08/04/24, 2:38:04AM] Prince Choudhary: What is your favourite subject?
+# [08/04/24, 2:38:11AM] +918826727515: Maths
+# [08/04/24, 2:38:24AM] Prince Choudhary: Which songs do you like the most?
+# [08/04/24, 2:38:33AM] +918826727515: Rap songs
+# [08/04/24, 2:38:44AM] +918826727515: Sung by eminem
+# [08/04/24, 2:39:03AM] Prince Choudhary: Mine too, I love Eminem
+# [08/04/24, 2:39:20AM] +918826727515: He is great
+# [08/04/24, 2:39:22AM] Prince Choudhary: Are you interested in playing outdoor sports?
+# [08/04/24, 2:40:15AM] +918826727515: Yes
+# [08/04/24, 2:40:22AM] +918826727515: I love playing cricket
+# [08/04/24, 2:40:30AM] Prince Choudhary: Wonderful
+
+# Let's create the corrected text content by escaping special characters that might be causing issues in the user's code.
+
+corrected_text = r"""
+[08/04/24, 2:34:13 AM] Prince Choudhary: Hi
+[08/04/24, 2:34:28 AM] +91 88267 27515: Hi
+[08/04/24, 2:38:04 AM] Prince Choudhary: What is your favourite subject?
+[08/04/24, 2:38:11 AM] +91 88267 27515: Maths
+[08/04/24, 2:38:24 AM] Prince Choudhary: Which songs do you like the most?
+[08/04/24, 2:38:33 AM] +91 88267 27515: Rap songs
+[08/04/24, 2:38:44 AM] +91 88267 27515: Sung by eminem
+[08/04/24, 2:39:03 AM] Prince Choudhary: Mine too, I love Eminem
+[08/04/24, 2:39:20 AM] +91 88267 27515: He is great
+[08/04/24, 2:39:22 AM] Prince Choudhary: Are you interested in playing outdoor sports?
+[08/04/24, 2:40:15 AM] +91 88267 27515: Yes
+[08/04/24, 2:40:22 AM] +91 88267 27515: I love playing cricket
+[08/04/24, 2:40:30 AM] Prince Choudhary: Wonderful
+"""
+
+# Save the corrected text to a new .txt file
+with open("C://Users//PRINCE CHOUDHARY//Downloads//Llama2-Medical-Chatbot-main//_chat.txt", "w") as file:
+    file.write(corrected_text)
+
