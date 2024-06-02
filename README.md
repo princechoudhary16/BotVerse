@@ -1,4 +1,4 @@
-Aggar# BotVerse
+# BotVerse
 Exploring Diverse Domains Of Wisdom Through Conversational Journeys
 
 Project by: Prince Choudhary, Anshuman Gupta and Tisha Patel
