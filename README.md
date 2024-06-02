@@ -1,5 +1,6 @@
 # BotVerse
 Exploring Diverse Domains Of Wisdom Through Conversational Journeys
+Project by: Prince Choudhary, Anshuman Gupta and Tisha Patel
 
 # (Hi there, 👋 We're excited to have you on board. This is a powerful bot designed to help you ask queries related to your data/knowledge.)
 
