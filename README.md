@@ -60,4 +60,4 @@ Botverse is open source and available under the MIT License.
 
 ---
 
-Dive into Botverse – Your gateway to conversational wisdom!
+
