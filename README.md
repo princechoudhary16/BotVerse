@@ -1,4 +1,4 @@
-# BotVerse
+Aggar# BotVerse
 Exploring Diverse Domains Of Wisdom Through Conversational Journeys
 
 Project by: Prince Choudhary, Anshuman Gupta and Tisha Patel
@@ -8,7 +8,7 @@ Project by: Prince Choudhary, Anshuman Gupta and Tisha Patel
 # (- **Data:** This is the data which has been used as a knowledge base. [Knowledge Base]&#40;https://docs.chainlit.io&#41; 📚)
 
 Welcome to Botverse, your cutting-edge conversational companion designed to traverse the vast terrains of human knowledge. Botverse is not just a chatbot; it's a journey through conversations, bringing you closer to the wisdom tucked away in textual documents, databases, and even the intricate weaves of WhatsApp chats.
-
+Kuch Likha Tumne
 ## About Botverse
 
 Harnessing the prowess of the Langchain framework and the intelligence of a Large Language Model (LLM), Botverse embodies the conversational aptitude akin to renowned models like ChatGPT. It's a blend of technological marvels: the Gemini model's adaptability, the robustness of Hugging Face Hub, and the innovative one-shot learning MRKL agent. With Botverse, you engage in dialogue that's not only informative and accurate but contextually rich.
@@ -60,4 +60,4 @@ Botverse is open source and available under the MIT License.
 
 ---
 
-
+Dive into Botverse – Your gateway to conversational wisdom!
