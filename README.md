@@ -1,63 +1,85 @@
 # BotVerse
-Exploring Diverse Domains Of Wisdom Through Conversational Journeys
 
-Project by: Prince Choudhary, Anshuman Gupta and Tisha Patel
+A multi-domain RAG chatbot that answers questions using your own documents, databases, and WhatsApp chat exports. Built with LangChain, Gemini, and FAISS vector search.
 
-# (Hi there, 👋 We're excited to have you on board. This is a powerful bot designed to help you ask queries related to your data/knowledge.)
+## What It Does
 
-# (- **Data:** This is the data which has been used as a knowledge base. [Knowledge Base]&#40;https://docs.chainlit.io&#41; 📚)
+Upload your documents or data, and BotVerse creates an intelligent conversational interface on top of it. It uses Retrieval-Augmented Generation (RAG) to find relevant context from your knowledge base and generate accurate, grounded answers.
 
-Welcome to Botverse, your cutting-edge conversational companion designed to traverse the vast terrains of human knowledge. Botverse is not just a chatbot; it's a journey through conversations, bringing you closer to the wisdom tucked away in textual documents, databases, and even the intricate weaves of WhatsApp chats.
-Kuch Likha Tumne
-## About Botverse
+**Supported data sources:**
+- Text documents and PDFs
+- Database records
+- WhatsApp chat exports
 
-Harnessing the prowess of the Langchain framework and the intelligence of a Large Language Model (LLM), Botverse embodies the conversational aptitude akin to renowned models like ChatGPT. It's a blend of technological marvels: the Gemini model's adaptability, the robustness of Hugging Face Hub, and the innovative one-shot learning MRKL agent. With Botverse, you engage in dialogue that's not only informative and accurate but contextually rich.
+## Architecture
 
-## Key Features
+```
+User Query
+    │
+    ├── Chainlit UI (chat interface)
+    │
+    ├── LangChain Agent (MRKL framework)
+    │     ├── Vector Store Tool (FAISS index over documents)
+    │     ├── Database Tool (SQL queries)
+    │     └── Chat History Tool (WhatsApp export analysis)
+    │
+    ├── Embeddings → HuggingFace Hub
+    ├── LLM → Google Gemini
+    │
+    └── Response (with source attribution)
+```
 
-- **Multi-Domain Knowledge Access**: Interact with a system that draws from texts, databases, and conversational logs.
-- **Advanced NLP Capabilities**: Experience nuanced conversations powered by state-of-the-art NLP models.
-- **Dynamic Learning and Adaptation**: Witness a system that learns from each interaction, evolving to serve you better.
-- **Robust Architecture**: Trust in a system designed for high efficiency and accuracy, underpinned by rigorous testing and quality assurance.
+## Tech Stack
 
-## Quick Start
+- **LangChain** — agent framework and chain orchestration
+- **Gemini** — language model for generation
+- **FAISS** — vector similarity search for document retrieval
+- **HuggingFace Hub** — embedding models
+- **Chainlit** — chat UI framework
+- **Python** — core application
 
-Engage with Botverse by simply initiating a chat. Ask your questions and let Botverse guide you through the realms of medical insights, historical facts, or even the latest tech trends.
+## Setup
 
-## Objectives
+```bash
+git clone https://github.com/princechoudhary16/BotVerse.git
+cd BotVerse
 
-Our mission with Botverse is to:
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
 
-- Provide an adaptive conversational AI for a diverse range of inquiries.
-- Harness information from a multitude of domains.
-- Maintain high security and privacy standards.
-- Continuously evolve with each interaction for personalized user experiences.
+# Install dependencies
+pip install langchain chainlit faiss-cpu google-generativeai huggingface_hub
 
-## Behind the Scenes
+# Set up environment variables
+cp .env.example .env
+# Edit .env with your API keys
 
-Botverse's architecture is a marvel of modern engineering, integrating a User Interface Layer, Application Logic Layer, and Data Access Layer to deliver seamless responses. A robust Knowledge Base Manager ensures that the information remains current and relevant.
+# Ingest your documents
+python ingest.py
 
-## Disclaimer
+# Run the chatbot
+chainlit run chat.py
+```
 
-Botverse is a sophisticated information resource that should not replace professional advice where it's required.
+## Project Structure
 
-## Join Us
+```
+BotVerse/
+├── chat.py        # Main chatbot application
+├── model.py       # LLM configuration and chain setup
+├── ingest.py      # Document ingestion and FAISS index creation
+├── db.py          # Database connection and query tools
+├── data/          # Knowledge base documents
+├── index.faiss    # Pre-built FAISS index
+├── index.pkl      # Serialized index metadata
+└── chainlit.md    # Chainlit UI configuration
+```
 
-We welcome contributors to the Botverse ecosystem. Together, let's build an AI that not only converses but also enlightens.
+## Team
 
-## Contact
-
-For queries or support, contact us at:
-
-- Prince Choudhary: pc16oct@gmail.com
-- Tisha Patel: patelt2526@gmail.com
-- Anshuman Gupta: anshumang2002@gmail.com
-
+Built by Prince Choudhary, Anshuman Gupta, and Tisha Patel.
 
 ## License
 
-Botverse is open source and available under the MIT License.
-
----
-
-Dive into Botverse – Your gateway to conversational wisdom!
+MIT
